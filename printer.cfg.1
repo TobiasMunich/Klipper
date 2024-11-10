@@ -9,9 +9,13 @@
 # mcu: chip: GD32F303RET6
 #      version: CR4CU220812S12
 
+[virtual_pins]
 [include sensorless.cfg]
 [include gcode_macro.cfg]
 [include printer_params.cfg]
+[include Helper-Script/useful-macros.cfg]
+[include Helper-Script/KAMP/KAMP_Settings.cfg]
+[include Helper-Script/git-backup.cfg]
 
 [mcu]
 serial: /dev/ttyS7
@@ -431,3 +435,32 @@ max_z_accel: 300
 # recover_velocity: 500.
 
 [exclude_object]
+
+#*# <---------------------- SAVE_CONFIG ---------------------->
+#*# DO NOT EDIT THIS BLOCK OR BELOW. The contents are auto-generated.
+#*#
+#*# [input_shaper]
+#*# shaper_type_y = ei
+#*# shaper_freq_y = 59.2
+#*# shaper_type_x = ei
+#*# shaper_freq_x = 59.2
+#*#
+#*# [bed_mesh default]
+#*# version = 1
+#*# points =
+#*# 	  0.181281, 0.074906, 0.003938, -0.003281, 0.030813, 0.051562
+#*# 	  0.170244, 0.109849, 0.089435, 0.052500, 0.118625, 0.152969
+#*# 	  0.162574, 0.133813, 0.114563, 0.099375, 0.097219, 0.196719
+#*# 	  0.199406, 0.131937, 0.157631, 0.146179, 0.158384, 0.233381
+#*# 	  0.151892, 0.122108, 0.112687, 0.130469, 0.175679, 0.214432
+#*# 	  -0.006219, -0.002750, 0.029875, 0.046804, 0.097156, 0.159872
+#*# x_count = 6
+#*# y_count = 6
+#*# mesh_x_pps = 2
+#*# mesh_y_pps = 2
+#*# algo = lagrange
+#*# tension = 0.2
+#*# min_x = 5.0
+#*# max_x = 295.0
+#*# min_y = 5.0
+#*# max_y = 295.0
